@@ -8,13 +8,10 @@ export default async function Detail({ params }: DetailProps) {
   const db = client.db("forum0");
 
   let post = null;
-  try {
+  
     post = await db
       .collection("board")
       .findOne({ _id: new ObjectId(params.id) }); 
-  } catch {
-    
-  }
 
   return (
     <div>
