@@ -1,8 +1,8 @@
 export default function Write(){
     return (
-        <div>
+        <div className="p-20">
             <h4>글작성 </h4>
-            <form action="/api/posts" method= "POST">
+            <form action="/api/post/new" method= "POST">
                 <input type="text" name="title" placeholder="제목" />
                 <input type="text" name="content" placeholder="내용" />
                 
@@ -10,4 +10,4 @@ export default function Write(){
             </form>
         </div>
     )
-}
+} 
